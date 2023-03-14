@@ -129,7 +129,7 @@ function Services() {
         data-aos-duration="1500"
       >
         <h1 className="text-center pt-5">How We Work</h1>
-        <p className="text-center">
+        <p className="text-center p-5">
           It is a long established fact will be distracted.Lorem Ipsum is simply
           dummy text of
           <br /> the printing and typesetting industry.
@@ -157,7 +157,7 @@ function Services() {
                     <img src={e.icon} alt="" />
                     <h1>{e.number}</h1>
                   </div>
-                  <p className="pt-5">{e.paragarph}</p>
+                  <p className="p-5">{e.paragarph}</p>
                 </div>
               </div>
             </Link>

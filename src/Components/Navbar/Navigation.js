@@ -18,16 +18,14 @@ function OffcanvasExample() {
       >
         <Container>
           <div className="logo d-flex flex-row align-items-center">
-            <Link to={"/"}>
-              <img
-                src={logoOne}
-                alt=""
-                style={{
-                  width: "150px",
-                  height: "50px",
-                }}
-              />
-            </Link>
+            <img
+              src={logoOne}
+              alt=""
+              style={{
+                width: "150px",
+                height: "50px",
+              }}
+            />
           </div>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

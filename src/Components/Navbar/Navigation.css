@@ -1,0 +1,8 @@
+.navi {
+  z-index: 100;
+}
+
+.navi .nav-link .active {
+  background-color: white;
+  color: black;
+}

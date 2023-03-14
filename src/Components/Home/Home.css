@@ -1,0 +1,385 @@
+/* body {
+  overflow-x: hidden;
+} */
+.homeContainer {
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+.homeContainer .background .bg {
+  width: 100%;
+  height: 90vh;
+  z-index: -100;
+  object-fit: cover;
+}
+
+.homeContainer .background .heading {
+  position: absolute;
+  z-index: 100;
+  top: 250px;
+  left: 200px;
+  z-index: 20;
+}
+
+.homeContainer .background .heading .btn {
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #292f36;
+  width: 170px;
+  height: 40px;
+  transition: all 0.4s;
+}
+
+.homeContainer .background .heading .btn:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.homeContainer .background .heading .btn p {
+  padding-top: 15px;
+  padding-left: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 820px) {
+  .homeContainer .background .heading {
+    right: 150px;
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .homeContainer .background .heading {
+    top: 190px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .homeContainer .background .bg {
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .homeContainer .background .bg {
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+  }
+  .homeContainer .background .heading {
+    top: 100px;
+  }
+}
+
+/* End of background Image section */
+
+/* Project plans */
+.homeContainer .projectContainer {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 130px;
+}
+
+.homeContainer .projectContainer .cards {
+  text-align: center;
+  padding: 20px;
+  padding-top: 30px;
+  background-color: rgb(236, 234, 234);
+  border-radius: 15px;
+  box-shadow: rgb(236, 234, 234) 0px 8px 24px;
+}
+
+.homeContainer .projectContainer .cards .button {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  width: 150px;
+  border-radius: 14px;
+  transition: all 0.4s;
+}
+
+.homeContainer .projectContainer .cards .button:hover {
+  transform: scaleX(1.15) scaleY(1.15);
+}
+
+.homeContainer .projectContainer .cards .button p {
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+.homeContainer .projectContainer .cards .button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .homeContainer .projectContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-top: 130px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homeContainer .projectContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-top: 130px;
+  }
+}
+
+/* End Of project Section */
+
+/* Art of Styling Section */
+.homeContainer .styleContainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 3rem;
+  margin-top: 150px;
+}
+
+.homeContainer .styleContainer .left .callButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.homeContainer .styleContainer .left .callButton .cll {
+  width: 50px;
+  height: 50px;
+}
+
+.homeContainer .styleContainer .left .callButton .callPara {
+  font-size: 10px;
+}
+
+.homeContainer .styleContainer .left .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: #292f36;
+  color: white;
+  width: 300px;
+  transition: all 0.5s;
+}
+
+.homeContainer .styleContainer .left .btn:hover {
+  transform: sacleX(1.1) scaleY(1.1);
+}
+
+.homeContainer .styleContainer .left .btn p {
+  padding-top: 14px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.homeContainer .styleContainer .right .stylePic {
+  width: 500px;
+  height: 500px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 20%;
+}
+
+@media screen and (max-width: 1100px) {
+  .homeContainer .styleContainer {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    gap: 3rem;
+    margin-top: 150px;
+  }
+  .homeContainer .styleContainer .left .callButton {
+    justify-content: center;
+  }
+  .homeContainer .styleContainer .left .btn {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .homeContainer .styleContainer .right .stylePic {
+    width: 320px;
+    height: 320px;
+  }
+}
+/* Endo Of Art of Styling section */
+
+/* People Thinking Section */
+.homeContainer .thinkingContainer {
+  width: 85%;
+  margin: auto;
+  background-color: #f4f0ec;
+  margin-top: 150px;
+  border-radius: 20px;
+}
+
+.homeContainer .thinkingContainer .peopleContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 25px;
+}
+
+.homeContainer .thinkingContainer .peopleContainer .cards {
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.homeContainer .thinkingContainer .peopleContainer .cards .avatar {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .homeContainer .thinkingContainer .peopleContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .homeContainer .thinkingContainer .peopleContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 25px;
+  }
+}
+/* End of people Thinking Section */
+
+/* Cout Section */
+.homeContainer .countContainer {
+  margin-top: 130px;
+  width: 100%;
+  background-color: #f4f0ec;
+}
+
+.homeContainer .countContainer .cards {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  place-items: center;
+  padding: 20px;
+}
+
+.homeContainer .countContainer .cards .cardDe {
+  padding: 20px;
+  padding-top: 30px;
+  text-align: center;
+}
+.homeContainer .countContainer .cards .cardDe h1 {
+  color: #cda274;
+}
+
+@media screen and (max-width: 800px) {
+  .homeContainer .countContainer .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .homeContainer .countContainer .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    place-items: center;
+  }
+}
+/* end Of Count Section */
+
+/* Articles and News Section */
+.homeContainer .articleContianer {
+  width: 85%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.homeContainer .articleContianer .articleCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  place-items: center;
+}
+
+.homeContainer .articleContianer .articleCards .cards {
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+}
+
+.homeContainer .articleContianer .articleCards .cards .articleImage {
+  width: 250px;
+}
+@media screen and (max-width: 1185px) {
+  .homeContainer .articleContianer .articleCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    place-items: center;
+  }
+}
+@media screen and (max-width: 780px) {
+  .homeContainer .articleContianer .articleCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    place-items: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .homeContainer .articleContianer .articleCards .cards {
+    width: 200px;
+    height: 400px;
+  }
+  .homeContainer .articleContianer .articleCards .cards .articleImage {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* End Of Articles and News Section */
+
+/* Join Section */
+.homeContainer .joinContainer {
+  width: 85%;
+  height: 50vh;
+  margin: auto;
+  background-color: #292f36;
+  border-radius: 30px;
+}
+
+.homeContainer .joinContainer .joinPart {
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  padding-top: 80px;
+  color: white;
+}
+/* End Of Join Section */

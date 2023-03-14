@@ -1,0 +1,88 @@
+.contactContainer {
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact Image */
+.contactContainer .contactImage .conImage {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+/* End Of contact image Section */
+
+/* Form Section */
+.contactContainer .form {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.contactContainer .form .left {
+  height: 300px;
+  background-color: #f4f0ec;
+  padding: 20px;
+  padding-top: 50px;
+  border-radius: 25px;
+}
+
+.contactContainer .form .left .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  background-color: #f4f0ec;
+  border: none;
+}
+.contactContainer .form .left .card:nth-child(2) .icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 33px;
+}
+
+.contactContainer .form .right {
+  width: 50%;
+}
+
+.contactContainer .form .right form {
+  margin: auto;
+}
+
+.contactContainer .form .right form .top {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contactContainer .form .right form .top:nth-child(2) {
+  margin-top: 20px;
+}
+
+.contactContainer .form .right form .top input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.contactContainer .form .right form textarea {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 773px) {
+  .contactContainer .form .right form .top {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* End Of Form Section */

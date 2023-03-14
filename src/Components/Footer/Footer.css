@@ -1,0 +1,49 @@
+.footContainer {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 150px;
+  border-bottom: 2px solid black;
+}
+
+.footContainer .logoside .logoIcon {
+  width: 160px;
+}
+
+.footContainer .logoside .socialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.footContainer .pages .links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footContainer .pages .links .list {
+  text-decoration: none;
+  color: black;
+  margin-top: 15px;
+  transition: all 0.4s;
+}
+
+.footContainer .pages .links .list:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+
+@media screen and (max-width: 850px) {
+  .footContainer {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 150px;
+  }
+}

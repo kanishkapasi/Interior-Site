@@ -1,0 +1,167 @@
+.serviceContainer {
+  width: 100%;
+  height: 100%;
+}
+
+/* Service background Image Section */
+.serviceContainer .serviceImage .image {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+/*  End OF Service background Image Section  */
+
+/*  Card Contianer Section*/
+.serviceContainer .cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin: auto;
+  width: 85%;
+  place-items: center;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.serviceContainer .cardContainer .cardDiv {
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+
+.serviceContainer .cardContainer .cardDiv:hover {
+  background-color: #f4f0ec;
+  cursor: pointer;
+}
+
+.serviceContainer .cardContainer .cardDiv .btn {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin: auto;
+  width: 150px;
+  transition: all 0.4s;
+}
+
+.serviceContainer .cardContainer .cardDiv .btn:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+/* End of Card Contiainer Section */
+
+@media screen and (max-width: 930px) {
+  .serviceContainer .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .serviceContainer .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+/* How We Work Section */
+.serviceContainer .WorkContainer {
+  width: 85%;
+  background-color: #f4f0ec;
+  margin: auto;
+  border-radius: 25px;
+  margin-top: 100px;
+}
+
+.serviceContainer .WorkContainer .workCardContainer {
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.serviceContainer .WorkContainer .workCardContainer .workCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+  padding: 15px;
+  transition: all 0.5s;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.serviceContainer .WorkContainer .workCardContainer .workCards:hover {
+  background-color: white;
+  border-radius: 25px;
+}
+
+.serviceContainer .WorkContainer .workCardContainer .workCards .left .lftImage {
+  width: 400px;
+  height: 450px;
+}
+
+.serviceContainer .WorkContainer .workCardContainer .workCards .right {
+  padding: 40px;
+  width: 400px;
+  height: 400px;
+}
+
+.serviceContainer .WorkContainer .workCardContainer .workCards .right .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .serviceContainer .WorkContainer .workCardContainer .workCards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .serviceContainer
+    .WorkContainer
+    .workCardContainer
+    .workCards
+    .left
+    .lftImage {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .serviceContainer
+    .WorkContainer
+    .workCardContainer
+    .workCards
+    .left
+    .lftImage {
+    width: 200px;
+    height: 250px;
+  }
+}
+/* End Of How We Work Section */
+
+/* join Section */
+.serviceContainer .joinContainer {
+  width: 85%;
+  height: 50vh;
+  margin: auto;
+  background-color: #292f36;
+  border-radius: 30px;
+  margin-top: 100px;
+}
+
+.serviceContainer .joinContainer .joinPart {
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  padding-top: 80px;
+  color: white;
+}
+/* End Of Join Section */

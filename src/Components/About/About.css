@@ -1,0 +1,180 @@
+.aboutContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutContainer .imageContainer .bg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* What We Do Section */
+.aboutContainer .whatContainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  padding: 10px;
+}
+
+.aboutContainer .whatContainer .left {
+  padding: 5px;
+}
+.aboutContainer .whatContainer .left .btn {
+  transition: all 0.4s;
+}
+
+.aboutContainer .whatContainer .left .btn:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.aboutContainer .whatContainer .right .aOne {
+  width: 500px;
+  height: 300px;
+}
+
+@media screen and (max-width: 570px) {
+  .aboutContainer .whatContainer .right .aOne {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .aboutContainer .whatContainer .right .aOne {
+    width: 300px;
+    height: 150px;
+  }
+}
+/* End Of What We do Section */
+
+/* End Resul Section */
+.aboutContainer .endContainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  padding: 10px;
+}
+
+.aboutContainer .endContainer .right {
+  padding: 10px;
+}
+
+.aboutContainer .endContainer .left .aOne {
+  width: 500px;
+  height: 300px;
+}
+
+.aboutContainer .endContainer .right .btn {
+  transition: all 0.4s;
+}
+
+.aboutContainer .endContainer .right .btn:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+@media screen and (max-width: 570px) {
+  .aboutContainer .endContainer .left .aOne {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .aboutContainer .endContainer .left .aOne {
+    width: 300px;
+    height: 150px;
+  }
+}
+/* End Of End Result Section */
+
+/* Thinking Section */
+.aboutContainer .thinkingContainer {
+  width: 85%;
+  margin: auto;
+  margin-top: 120px;
+  background-color: #f4f0ec;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.aboutContainer .thinkingContainer .peopleContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  place-items: center;
+  padding-bottom: 40px;
+}
+
+.aboutContainer .thinkingContainer .peopleContainer .peopleCard {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.aboutContainer .thinkingContainer .peopleContainer .peopleCard .peopleImage {
+  width: 200px;
+  height: 300px;
+  transition: all 0.4s;
+}
+
+.aboutContainer
+  .thinkingContainer
+  .peopleContainer
+  .peopleCard
+  .peopleImage:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+@media screen and (max-width: 910px) {
+  .aboutContainer .thinkingContainer .peopleContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .aboutContainer .thinkingContainer .peopleContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    place-items: center;
+  }
+}
+/* End Of Thinking Section */
+
+/* Form Section */
+.aboutContainer .formContainer {
+  width: 85%;
+  margin: auto;
+  margin-top: 100px;
+}
+.aboutContainer .formContainer .form {
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.aboutContainer .formContainer .form .formControll {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.formContainer .butn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+} /* End Of Form Section */

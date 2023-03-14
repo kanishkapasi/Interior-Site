@@ -1,0 +1,38 @@
+.projectContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.projectContainer .image .proImage {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+
+/* Table Section */
+.projectContainer .tableContainer {
+  width: 85%;
+  margin: auto;
+  margin-top: 120px;
+}
+
+.projectContainer .tableContainer .table {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.projectContainer .tableContainer .table .tableDetails {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 470px) {
+  .projectContainer .tableContainer .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+  }
+}
+/* End Of Table Section */
